@@ -514,7 +514,7 @@ function (pvs_studio_add_target)
         endif()
         add_custom_command(
             OUTPUT "${COMPILE_COMMANDS_LOG}"
-            COMMAND "${PVS_STUDIO_BIN}" analyze -i
+            COMMAND "${PVS_STUDIO_BIN}" analyze
                     --output-file "${COMPILE_COMMANDS_LOG}.always"
                     ${PVS_STUDIO_ARGS}
             COMMENT "Analyzing with PVS-Studio"
